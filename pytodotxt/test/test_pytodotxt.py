@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals
 from pytodotxt import Task, TaskList
 
 def test_contains_the_correct_number_of_items():
