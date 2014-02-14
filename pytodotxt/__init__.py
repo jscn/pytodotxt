@@ -25,6 +25,8 @@ class TextExtractor(object):
         text = self.task
         if '@' in self.task:
             text = self.task[:self.task.find('@')]
+        if '+' in self.task:
+            text = text[:text.find('+')]
         if PriorityExtractor(self.task).extract_priority():
             text = text[4:]
         return text

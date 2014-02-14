@@ -33,4 +33,7 @@ def test_task_sets_text_when_priority_is_set():
 def test_task_sets_text_when_priority_is_not_set():
     task = Task('Call Mom @Phone +Family')
     assert task.text == 'Call Mom'
-    
+
+def test_task_sets_text_when_project_is_set():
+    task = Task('Call Mom +Family')
+    assert task.text == 'Call Mom'    
